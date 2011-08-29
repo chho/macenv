@@ -1,0 +1,12 @@
+Brad Chang's enviroment config files
+
+hosts
+path: /etc
+
+gvimrc
+path: ~
+mv gvimrc .gvimrc
+
+vim
+path: ~
+mv vim .vim
