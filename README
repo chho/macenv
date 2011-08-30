@@ -3,11 +3,16 @@ Brad Chang's enviroment config files
 
 hosts
 path: /etc
+cp hosts /etc/hosts
 
 gvimrc
 path: ~
-mv gvimrc .gvimrc
+cp gvimrc ~/.gvimrc
 
 vim
 path: ~
-mv vim .vim
+cp vim ~/.vim
+
+profile
+path: ~
+cp profile ~/.profile
