@@ -16,3 +16,7 @@ cp vim ~/.vim
 profile
 path: ~
 cp profile ~/.profile
+
+gitconfig
+path: ~
+cp gitconfig ~/.gitconfig
