@@ -1,0 +1,7 @@
+[user]
+	name = Brad Chang
+	email = chho.hao@gmail.com
+[core]
+	editor = mvim
+[merge]
+	tool = mvim
