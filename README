@@ -20,3 +20,6 @@ cp profile ~/.profile
 gitconfig
 path: ~
 cp gitconfig ~/.gitconfig
+
+books
+books temp dir
