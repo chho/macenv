@@ -62,3 +62,6 @@ nnoremap <silent> <F2> :TlistToggle<CR>
 "NERDTree
 let NERDTreeChDirMode=2
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
+
+"Run Python
+nnoremap <silent> <F5> :!python %<CR>

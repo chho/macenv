@@ -8,5 +8,6 @@ alias ls='ls -G'
 PATH=/opt/postgresql-9.0.4/bin:$PATH
 
 LC_ALL=en_US.UTF-8 
+LANG=en_US.UTF-8 
 
-export PATH LC_ALL
+export PATH LC_ALL LANG
