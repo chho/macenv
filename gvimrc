@@ -17,6 +17,9 @@ set linespace=4
 set number
 set numberwidth=4
 
+"显示回车
+set list
+
 "禁止自动换行
 set nowrap
 "判断文件类型自动缩进
