@@ -17,6 +17,9 @@ set linespace=4
 set number
 set numberwidth=4
 
+"搜索时忽略大小写
+set ic
+
 "显示回车
 set list
 
