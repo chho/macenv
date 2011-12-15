@@ -17,6 +17,9 @@ set linespace=4
 set number
 set numberwidth=4
 
+"设置80列高亮
+set colorcolumn=80
+
 "搜索时忽略大小写
 set ic
 
