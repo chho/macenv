@@ -74,3 +74,10 @@ nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
 "Run Python
 nnoremap <silent> <F5> :!python %<CR>
+
+"括号自动匹配
+inoremap ( ()<LEFT>
+inoremap [ []<LEFT>
+inoremap { {}<LEFT>
+inoremap ' ''<LEFT>
+inoremap " ""<LEFT>
