@@ -43,7 +43,7 @@ set expandtab
 "制表符的长度，4个空格
 set tabstop=4
 "初始窗口宽度，高度
-set columns=195
+set columns=95
 set lines=45
 "初始窗口位置
 winpos 52 42
