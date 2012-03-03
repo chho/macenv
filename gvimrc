@@ -24,7 +24,7 @@ set colorcolumn=80
 set ic
 
 "显示回车
-set list
+"set list
 
 "禁止自动换行
 set nowrap
