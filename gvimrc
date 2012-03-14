@@ -80,9 +80,11 @@ nnoremap <silent> <F5> :!go run %<CR>
 
 "调用gofmt格式化go文档
 function! GoFormat()
+    :w
     execute "normal" "ggdG"
     :r !gofmt %
     execute "normal" "ggdd"
+    :w
 endfunction
 
 nnoremap <silent> <F4> :call GoFormat()<CR>
