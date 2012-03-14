@@ -24,7 +24,10 @@ set colorcolumn=80
 set ic
 
 "显示回车
-set list
+"set list
+
+"不生成备份文件
+set nobackup
 
 "禁止自动换行
 set nowrap
@@ -43,7 +46,7 @@ set expandtab
 "制表符的长度，4个空格
 set tabstop=4
 "初始窗口宽度，高度
-set columns=195
+set columns=95
 set lines=45
 "初始窗口位置
 winpos 52 42
@@ -72,8 +75,17 @@ nnoremap <silent> <F2> :TlistToggle<CR>
 let NERDTreeChDirMode=2
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
-"Run Python
-nnoremap <silent> <F5> :!python %<CR>
+" 调用go run运行当前代码
+nnoremap <silent> <F5> :!go run %<CR>
+
+"调用gofmt格式化go文档
+function! GoFormat()
+    execute "normal" "ggdG"
+    :r !gofmt %
+    execute "normal" "ggdd"
+endfunction
+
+nnoremap <silent> <F4> :call GoFormat()<CR>
 
 "括号自动匹配
 inoremap ( ()<LEFT>
