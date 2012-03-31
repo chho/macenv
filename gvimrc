@@ -17,6 +17,9 @@ set linespace=4
 set number
 set numberwidth=4
 
+"更改状态栏的格式
+set rulerformat=%43(%=%m%r%h%w#%n\ [%{&fileformat}:%{(&fenc==\"\"?&enc:&fenc).((exists(\"\+bomb\")\ &&\ &bomb)?\"\+B\":\"\").\"\"}:%{strlen(&ft)?&ft:'**'}]\ [%L\\%l,%c]\ %p%%%)
+
 "设置80列高亮
 set colorcolumn=80
 
@@ -80,11 +83,8 @@ nnoremap <silent> <F5> :!go run %<CR>
 
 "调用gofmt格式化go文档
 function! GoFormat()
-    :w
-    execute "normal" "ggdG"
-    :r !gofmt %
-    execute "normal" "ggdd"
-    :w
+    :!gofmt -w %
+    :e!
 endfunction
 
 nnoremap <silent> <F4> :call GoFormat()<CR>
