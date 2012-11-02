@@ -53,10 +53,7 @@ set backspace=indent,eol,start
 set laststatus=2
 
 "显示行号
-set relativenumber
-
-"生成undo文件
-set undofile
+set number
 
 "缺省正则插入\v
 nnoremap / /\v
@@ -78,7 +75,6 @@ set hlsearch
 set wrap
 set textwidth=79
 set formatoptions=qrn1
-set colorcolumn=85
 
 "显示换行符
 set list
