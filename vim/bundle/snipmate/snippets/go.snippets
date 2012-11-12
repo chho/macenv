@@ -1,0 +1,42 @@
+# package
+snippet pac
+	// Copyright `strftime("%Y")` Brad Chang. All rights reserved.
+	// Use of this source code is governed by a BSD-style
+	// license.
+
+	// Author: Brad Chang 
+	// Create by: `strftime("%Y-%m-%d")`
+
+	package ${1:`Filename($1)`}${2}
+
+# function
+snippet fun
+	// ${1:function_name}
+	func ${2:function_name}(${3:args})${4:return_values}{
+		${5://TODO}
+		return
+	}
+
+# import
+snippet imp
+	import (
+		"${1}"
+	)
+
+snippet newgo
+	// Copyright `strftime("%Y")` Brad Chang. All rights reserved.
+	// Use of this source code is governed by a BSD-style
+	// license.
+
+	// Author: Brad Chang 
+	// Create by: `strftime("%Y-%m-%d")`
+
+	package ${1:`Filename($1)`}${2}
+
+	import (
+		"${3}"
+	)
+
+	func main() {
+	}
+
